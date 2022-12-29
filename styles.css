@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,400;1,800&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f6fe;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* COTENEDOR PRINCIPAL */
+
+.contenedor-flex {
+    display: flex;
+}
+
+/* TITULOS */
+
+h1 {
+    color: #6d708d;
+}
+
+h2 {
+    margin: 10px;
+}
+
+/* TOGGLE SWITCH */
+
+.contenedor-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B3B5C6;
+    margin-bottom: 40px;
+}
+
+.toggle-wraper {
+    padding: 14px;
+    padding-top: 3px;
+}
+
+
+.switch {
+    position: relative;
+    background-color: #9fa3ed;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px
+}
+
+.switch::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#toggle:checked + .switch::after {
+    left: 30px;
+}
+
+#toggle:checked + .switch {
+    background-color: #c6c8f3;
+}
+
+#toggle {
+    display: none;
+}
+
+
+/* TARJETAS DE PRECIO (contenedor principal) */
+
+.contenedor-precio {
+    width: 250px;
+    background-color: #fff;
+    color: #6d708d;
+    padding: 30px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(10,10,10, 0.1);
+}
+
+/* TEXTO PRECIO */
+
+.contenedor-precio p {
+    font-size: 32px;
+    margin: 0;
+    color: #484b5b;
+}
+
+/* OCULTAR LOS PRECIOS MENSUALES */
+
+.precio-mensual {
+    display: none;
+}
+
+/* CLASE PARA JAVASCRIPT */
+.mostrar .precio-anual {
+    display: none;
+}
+
+.mostrar .precio-mensual {
+    display: block;
+}
+
+.contenedor-precio ul {
+    list-style: none;
+    padding: 0;
+    border-top: 1.5px solid #e7e7eb;
+}
+
+
+.contenedor-precio li {
+    border-top: 1.5px solid #e7e7eb;
+    padding: 15px 0;
+}
+
+
+/* BOTONES */
+
+.contenedor-precio button {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    color: #f3f3f3;
+    cursor: pointer;
+    background: linear-gradient(90deg, #9fa3ed, #6d71df);
+    border: 1px solid transparent;
+    font-size: small;
+}
+
+
+.contenedor-precio button:hover {
+    background: #fff;
+    color: #6d71df;
+    border-color: #6d71df;
+}
+
+/* OPCION PROFESIONAL */
+
+.opcion-profesional {
+    transform: scale(1.1);
+    color: #fff;
+    background: linear-gradient(90deg, #9fa3ed, #6d71df);
+}
+
+.opcion-profesional p {
+    color: #fff;
+}
+
+#boton-profesional {
+    background: #fff;
+    color: #6d71df;
+    border: 1px solid transparent;
+}
+
+#boton-profesional:hover {
+    border-color: #fff;
+    color: #fff;
+    background: linear-gradient(90deg, #9fa3ed, #6d71df);
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .opcion-profesional {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
